@@ -5,7 +5,11 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
-
+%\usepackage{chemmacros}
+%\usepackage{chemgreek}
+%\usechemmodule{redox}
+%\chemsetup[redox]{pos=top}
+%\ox{+1,Na}, \ox{2,Ca}, \ox{-2,S}, \ox{-1,F}
 
 \title{Appunti Fondamenti di chimica per Bioingegneria}
 \author{Leonardo Silvagni}
@@ -19,10 +23,10 @@ inorganica, tenuta dall'inimitabile professor Mozzon.
 \end{abstract}
 
 \section{La Materia}
-La materia è composta da atomi. Fino a fine 1800 si pensava queste fossero le particelle fondamentali ed indivisibili (da cui a-tomos, indivisibile) della materia.  
+%\ox{+1,Na}, \ox{2,Ca}, \ox{-2,S}, \ox{-1,F} 
+La materia è composta da atomi. Fino a fine 1800 si pensava queste fossero le particelle fondamentali ed indivisibili (da cui a-tomos, indivisibile) della materia. 
 Solo successivi e sempre più avanzati studi sull'elettricità hanno portato alla scoperta di varie particelle subatomiche
 \subsection{Caratteristiche principali delle particelle subatomiche}
-
 \begin{table}[H]
 \centering
 \begin{tabular}{c|c|c|c|c}
@@ -172,6 +176,7 @@ Non è in realtà qualcosa che esiste nella realtà, traspone un concetto appart
     \item Bilanciamento delle reazioni di ossidoriduzione complesse
 \end{enumerate}
 Il numero di ossidazione viene indicato ponendo sopra il simbolo di ogni elemento il suo $no$.\\
+%\ch{\ox{+1,H2}\ox{-2,O}}
 Il numero di ossidazione può essere determinato:
 \begin{enumerate}
     \item Conoscendo la formula di struttura di LEWIS del composto e i valori di elettronegatività degli elementi presenti nel composto
@@ -191,8 +196,107 @@ Il numero di ossidazione può essere determinato:
             \item Idrogeno H sempre +1 tranne negli idruri metallici dove no = -1
             \item Ossigeno O sempre -2 tranne in OF$_2$ dove ha no pari a +2 e nei perossidi o superossidi
         \end{itemize}
+        \item Tutti gli altri elementi della tavola periodica presentano no variabili da composto a composto.
+        \begin{itemize}
+            \item Ferro : +2 , +3
+            \item Rame : +1 , +2
+            \item Zolfo : -2 , +4 , +6
+            \item Cloro, Bromo e Iodio : -1 , +1 , +3 , +5 , +6
+        \end{itemize}
+        \item La somma algebrica dei no di tutti fli atomi di ciascun elemento presenti nella formula è uguale alla carica della formula
+        \[\Sigma no \ = \ \text{carica formula}\]
+        Esempi: determinare no di $SO_4^{2-}$ (+6), no di $Cu^{2+}$ (+2), utilizzando la formula sopra.\\
     \end{enumerate}
 \end{enumerate}
+\subsubsection{La rappresentazione delle equazioni chimiche}
+Le equazioni chimiche rappresentano i cambiamenti che avvengono nelle sostanze durante le reazioni chimiche. 
+Tutte le reazioni chimiche si possono rappresentare con questi due simbologie:
+\[aA \ + \ bB \rightarrow lL \ + \ mM\]
+\[aA \ + \ bB \rightleftharpoons lL \ + \ mM\]
+Dove le lettere maiuscole sono le formule chimiche, le lettere minuscole i coefficienti stechiometrici.
+\subsection{La classificazione delle reazioni chimiche}
+\begin{itemize}
+    \item Sulla base della completezza :  
+    \begin{itemize}
+        \item Reazioni complete
+        \item Reazioni di equilibrio
+    \end{itemize}
+    \item Dal tipo di reazione 
+    \begin{itemize}
+        \item Redox
+        \item Non Redox
+    \end{itemize}
+    \item Su base di calore ceduto o acquistato
+    \begin{itemize}
+        \item Esotermiche
+        \item Endotermiche
+    \end{itemize}
+\end{itemize}
+\subsubsection{La classificazione sulla base della completezza}
+\begin{enumerate}
+    \item Reazione completa: Almeno un reagente si trasforma completamente nel prodotto
+    
+    \item Reazione di equilibrio: Ci sono reazioni nelle quali la reazione inizia, ed arrivati ad un certo punto detto di "equilibrio chimico",
+    le quantità di prodotti che si formano non vengono più aumentate e neanche
+    diminuite, perchè le ulteriori quantità di prodotto che si formano reagiscono tra di loro pre ridare i reagenti di partenza
+    \[N_{2(g)}+3H_{2(g)}\ \rightleftharpoons 2NH_{2(g)}\]
+    Questa reazione di equilibrio da 32 g di N2 produce solo 1 g di $NH_2$\\
 
-
+\end{enumerate}
+\subsubsection{Classificazione sulla base del tipo di reazione}
+\begin{enumerate}
+    \item Reazioni non Redox : Sono le reazioni che avvengono senza variazioni del numero di ossidazione
+        degli elementi presenti
+         
+    \item Reazioni Redox : Sono le reazioni che avvengono con variazioni del numero di ossidazione degli
+            elementi presenti.
+\end{enumerate}
+\subsubsection*{Le reazioni Redox}
+Una specie chimica si dice che si ossida quando un elemento che la costituisce aumenta il suo no.     \\
+Una specie chimica si dice che si riduce quando un elemento che la costituisce diminuisce il suo no. \\
+Una sostanza è detta \textit{agente riducente} quando riduce un'altra sostanza e viene anche chiamata \textit{FORMA RIDOTTA (Rid)}
+di una coppia redox.\\
+Una sostanza è detta \textit{agente ossidante} quando ossida un'altra sostanza e viene anche chiamata \textit{FORMA OSSIDATA (Ox)}
+di una coppia redox.\\
+\[Rid_1 \rightleftharpoons Oss_1 + ne^-\]
+Questa scrittura si chiama \textit{semireazione di ossidazione}. Gli elettroni persi devono essere acquistati da una specie due
+\[Oss_2 + ne^- \rightleftharpoons Rid_2\]
+Una reazione di ossidoriduzione è la somma di due semireazioni
+\[Rid_1 + Oss_2 \rightleftharpoons Oss_1 + Rid_2\]
+Esempio
+\[Zn + Cu^{2+} \rightleftharpoons Zn^{2+} + Cu\]
+\[Oss_1/Rid_1 e Oss_2/Rid_2 \text{costituiscono due coppie coniugate redox}\]
+\subsection*{Le reazioni non Redox}
+\textbf{Il concetto di acido-base secondo Bronsted e Lowry:}\\ \textit{Un acido è una specie donatrice di protoni $H^+$, mentre una base 
+è una specie accettrice di protoni $H^+$}\\
+\[Acido_1 \rightleftharpoons Base_1 + H^+ \ \text{semireazione acido-base}\]
+\[Base_2 + H^+ \rightleftharpoons Acido_2 \ \text{semireazione acido-base}\]
+\[Acido_1 + Base_2 \rightleftharpoons Base_1 + Acido_2 \ \text{reazione acido-base}\]
+\subsubsection{Il bilanciamento delle reazioni chimiche}
+Il processo di bilanciamento di qualsiasi reazione chimica si basa su due principi:
+\begin{enumerate}
+    \item Bilancio di massa : numero e tipo di atomi di ciascun elemento deve essere uguale nei due membri dell'equazione.
+    \item Bilancio di carica : La somma algebrica delle cariche nei due membri dell'equazione deve coincidere
+\end{enumerate}
+Questi due principi vengono applicati contemporaneamente modificando gli oportuni coefficienti stechiometrici. Si usano quattro metodi:
+\begin{enumerate}
+    \item Metodo empirico (o metodo per verifica). E' utile per bilanciare reazioni non redox e reazioni redox semplici
+    \item Metodo algebrico
+    \item Metodo diretto
+    \item Metodo delle semireazioni
+\end{enumerate}
+Noi adotteremo solo quello empirico, gli ultimi sono utili per reazioni complesse.\\
+\textbf{Metodo empirico} significa aggiustare i coefficienti stechiometrici dati inizialmente per tentativi
+fintantochè non si ottiene la reazione bilanciata correttamente.
+Schema:
+\begin{enumerate}
+    \item Si bilancia un elemento alla volta
+    \item I coefficienti stechiometrici ottenuti in ogni passaggio non vanno più modificati fino al termine del processo.
+\end{enumerate}
+Strategia:
+\begin{enumerate}
+    \item Se un elemento compare solo in un composto nelle due parti dell'equazione, si deve bilanciare per primo questo elemento; 
+        Nel caso si presenti questa situazione per più di un elemento si inizierà il bilanciamento dall'elemento con numero di atomi diseguale.
+    \item Quando uno dei reagenti o dei prodotti è presente come sostanza elementare, si debe bilanciare questo elemento per ultimo.
+\end{enumerate}
 \end{document}
