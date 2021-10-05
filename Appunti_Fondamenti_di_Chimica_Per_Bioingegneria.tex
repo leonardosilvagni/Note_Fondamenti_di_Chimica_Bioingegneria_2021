@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{amssymb}
 %\usepackage{chemmacros}
 %\usepackage{chemgreek}
 %\usechemmodule{redox}
@@ -297,6 +298,86 @@ Strategia:
 \begin{enumerate}
     \item Se un elemento compare solo in un composto nelle due parti dell'equazione, si deve bilanciare per primo questo elemento; 
         Nel caso si presenti questa situazione per più di un elemento si inizierà il bilanciamento dall'elemento con numero di atomi diseguale.
-    \item Quando uno dei reagenti o dei prodotti è presente come sostanza elementare, si debe bilanciare questo elemento per ultimo.
+    \item Quando uno dei reagenti o dei prodotti è presente come sostanza elementare, si deve bilanciare questo elemento per ultimo.
 \end{enumerate}
+Esercizio: Bilanciare la seguente reazione usando il metodo empirico
+
+\begin{align*}
+    &Al(OH)_3 + H_2SO_4 \rightarrow Al_2(SO_4)_3 + H_2O\\
+    \text{Bilancio di Al}\ &2Al(OH)_3 + H_2SO_4 \rightarrow Al_2(SO_4)_3 + H_2O\\
+    \text{Bilancio di S} \ &2Al(OH)_3 + 3H_2SO_4 \rightarrow Al_2(SO_4)_3 + H_2O\\
+    \text{Bilancio di H} \ &2Al(OH)_3 + 3H_2SO_4 \rightarrow Al_2(SO_4)_3 + 6H_2O\\
+    \text{Bilancio di O} \ &2Al(OH)_3 + 3H_2SO_4 \rightarrow Al_2(SO_4)_3 + 6H_2O \ \text{Già bilanciato}
+\end{align*}
+
+\subsection{I calcoli stechiometrici}
+\subsubsection{Il rapporto molare}
+Sulla base delle convenzioni fatte alle formule dei composti si può attribuire il significato di una quantità di
+sostanza in grammi pari alla massa molecolare. Quindi le equazioni chimiche si possono trasformare in 
+equazioni numeriche se al posto delle formule si sostituiscono le quantità in grammi pari alle masse molecolari.\\
+Esempio: vedi libro, comunque è intuitivo.\\
+Nei calcoli stechiometrici si tratta di trovare le quantità di reagenti e prodotti quando sia nota la quantità
+di uno di essi. Noto uno trovo l'altro.\\
+\textbf{La risoluzione di questo problema} si può raggiungere con due procedimenti, sostanzialmente equivalenti:
+\begin{enumerate}
+    \item \textbf{Metodo delle masse} : si imposta una proporzione con le masse molari moltiplicate per i rispettivi
+    coefficienti stechiometrici
+    \[3mol \cdot M_{H_2}g/mol \ : 1mol \cdot M_{N_2}g/mol = m(g)_{H_2} : m(g)_{N_2}\]
+    \item \textbf{Metodo delle moli} : si imposta una proporzione con i coefficienti stechiometrici:
+    \[3mol_{H_2} : 1mol_{N_2} = n_{mol_{H_2}} : n'_{mol_{N_2}}\]
+    Dal secondo si può facilmente ricavare il primo, da $m=n\cdot M$\\
+    Esempio pag 48 libro: Data la seguente reazione già bilanciata e che prosegue in modo completo
+    \begin{align*}
+        CH_{4(g)} + 2O_{2(g)} &\rightarrow CO_{2(g)} + 2H_2O_{(g)}\\
+        &\text{Calcolare la quantità in g di acqua che si forma bruciando 1kg di CH$_4$}\\
+        &\text{Troviamo le moli di metano }\\
+        n=m/M = \frac{1000.00g}{16.039g/mol} &= 62.348 mol\\
+        n_{H_2O} = 2\cdot 62.348 &= 124.696 mol\\
+        m_{H_2O} = n_{H_2O} &\cdot M_{H_2O} = 2246.398g.
+    \end{align*}
+\end{enumerate}
+\subsubsection{Il rendimento}
+Non lo vediamo
+\subsubsection{Il reagente limitante}
+Spesso avviene che in una reazione chimica un reagente sia presente in quantità inferiore
+a quella richiesta in base ai rapporti stechiometrici dati dall'equazione chimica.
+Tale reagente viene chiamato \textbf{REAGENTE LIMITANTE} poichè limita la quantità di prodotto che si 
+può formare. Quando tutto il reagente limitante ha reagito, non si formano più prodotti, anche se sono 
+ancora presenti quantità di altri reagenti che ovviamente rimarranno non reagite.\\
+Esercizio pagina 50: Determinare il reagente limitante ed il volume in litri di $SO_2$ che si libera
+facendo reagire 850g di pirite $FeS_{2(s)}$ con 300 litri di $O_2$ considerando entrambi i volumi alla temperatura
+di 25 gradi e alla pressione di 1 atmosfera secondo la reazione seguente da bilanciare con il metodo empirico e che procede in modo completo
+\[FeS_2 + O_2 \rightarrow Fe_2O_3 + SO_2\]
+\[4FeS_2 + 11O_2 \rightarrow 2Fe_2O_3 + 8SO_2 \ \text{Si possono anche tenere le frazioni, non cambia il significato}\]
+Troviamo le moli
+\[n_{Fe_2S_2} = \frac{850g}{119.97 g/mol} = 7.085 mol\]
+\[pv = nRT \ \text{R=0.08206 $\frac{l\cdot atm}{mol \cdot K}$}\]
+\[1atm\cdot 300l = n_{O_2} \cdot 0.08206\frac{l\cdot atm}{mol \cdot K} \cdot (273.15+25) K\]
+$n_{O_2}= 12.262 mol$\\
+Ma se
+\[4mol_{FeS_2} : 11mol_{O_2} = 7.085mol_{FeS_2} : n'mol_{O_2}\]
+\[n'mol_{O_2}= 19.48mol\]
+Ma io ho meno moli, ergo l'ossigeno è il reagente limitante, brucia una parte della pirite ed il resto rimane non reagita
+\[11mol_{O_2} : 8mol_{SO_2} = 12.262 : n^*\]
+\[n^*_{mol_{SO_2}}= \frac{8\cdot 12.262}{11} = 8.918 mol\]
+\[v^*_{SO_2}= \frac{n^*_{SO_2}RT}{p} = 128.19 l\]
+\subsection{Le soluzioni liquide}
+Soluzioni è un termine generico con cui si suole designare un sistema a più componenti fisicamente omogeneo, cioè una 
+qualsiasi \textbf{fase} in cui sono presenti più specie chimiche. In una soluzione liquida si indica come \textit{solvente}
+il componente che ha lo stesso stato di aggregazione di questa, e come \textit{soluto} l'altro (o gli altri) componenti.
+\\
+Nel caso la soluzione si presenti nello stesso stato di aggregazione di due o più componenti, si indica con
+\textit{solvente} quello presente in maggiore quantità.\\
+La composizione di una soluzione viene definita precisando le quantità relative dei componenti 
+\begin{enumerate}
+    \item \textit{Frazione ponderale} $w_i$ del componente i-esimo definita come il rapporto tra la massa del componente e la massa totale
+    \item \textit{Frazione ponderale percentuale} (Nota come percenuale in massa) Se il rapporto che definisce la frazione ponderale
+    viene moltiplicato per 100 si ottiene la \textbf{frazione ponderale percentuale}: $w_i'=100w_i=100\frac{m_i}{m_{sol}}$
+    \item \textit{Frazione molare} Se $n_1,n_2,...,n_i$ rappresentano il numero di moli dei diversi componenti
+    della soluzione, si definisce frazione molare del componente i-esimo $\mathcal{X}_i$ il rapporto tra il numero di moli $n_i$
+    ed il numero di moli $n_{tot}$ totali nella soluzione. Cioè $\mathcal{X}_i = \frac{n_i}{n_{tot}}$
+\end{enumerate}
+
+
+
 \end{document}
